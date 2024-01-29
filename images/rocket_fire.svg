@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 443.1 125.99">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-6);
+        opacity: .5;
+      }
+
+      .cls-2 {
+        fill: #fdfdfd;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-4);
+      }
+
+      .cls-3, .cls-4 {
+        opacity: .3;
+      }
+
+      .cls-4 {
+        filter: url(#drop-shadow-5);
+      }
+    </style>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="46.93" dy="70.4"/>
+      <feGaussianBlur result="blur" stdDeviation="11.73"/>
+      <feFlood flood-color="#ffe2a5" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3" filterUnits="userSpaceOnUse">
+      <feOffset dx="57.77" dy="86.65"/>
+      <feGaussianBlur result="blur-2" stdDeviation="14.44"/>
+      <feFlood flood-color="#ffe2a5" flood-opacity=".2"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-4" filterUnits="userSpaceOnUse">
+      <feOffset dx="32.96" dy="49.44"/>
+      <feGaussianBlur result="blur-3" stdDeviation="8.24"/>
+      <feFlood flood-color="#000" flood-opacity=".1"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-5" filterUnits="userSpaceOnUse">
+      <feOffset dx="32.96" dy="49.44"/>
+      <feGaussianBlur result="blur-4" stdDeviation="8.24"/>
+      <feFlood flood-color="#ffe2a5" flood-opacity=".2"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-6" filterUnits="userSpaceOnUse">
+      <feOffset dx="35.15" dy="52.73"/>
+      <feGaussianBlur result="blur-5" stdDeviation="8.79"/>
+      <feFlood flood-color="#ffe2a5" flood-opacity=".2"/>
+      <feComposite in2="blur-5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-3">
+    <polygon class="cls-2" points="331.33 32.77 .18 0 .14 31.89 .09 63.78 443.1 64.08 331.33 32.77"/>
+  </g>
+  <g class="cls-4">
+    <polygon class="cls-2" points="331.24 95.07 0 125.99 .05 94.1 .09 62.21 443.1 64.08 331.24 95.07"/>
+  </g>
+  <g class="cls-1">
+    <polygon class="cls-2" points="416.02 64.22 1.65 96.6 1.69 64.71 1.74 32.82 407.84 57.29 416.02 64.22"/>
+  </g>
+</svg>

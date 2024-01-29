@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: ESBuildNeutral-Regular, 'ES Build Neutral';
+        font-size: 33px;
+      }
+
+      .cls-2 {
+        fill: #00d15f;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="2.39" y="2.96" width="37.22" height="37.22" rx="2.97" ry="2.97"/>
+  <text class="cls-1" transform="translate(12.67 29.57)"><tspan x="0" y="0">+</tspan></text>
+</svg>
