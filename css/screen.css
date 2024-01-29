@@ -1212,7 +1212,9 @@ figure {
   text-shadow: none; }
 
 .submission .dataTable {
-  padding-top: 30px; }
+  padding-top: 30px;
+  position: relative;
+  z-index: 10; }
   .submission .dataTable-container {
     border-collapse: collapse;
     width: 100%; }
@@ -1320,7 +1322,8 @@ figure {
     justify-content: space-around;
     width: 100%;
     color: #2B2B38;
-    font-family: "LuckiestGuy", Arial, Helvetica, sans-serif; }
+    font-family: "LuckiestGuy", Arial, Helvetica, sans-serif;
+    padding: 20px 0; }
     .overall .score_bar-txtTitle {
       font-size: 21px; }
       @media screen and (min-width: 600px) {
