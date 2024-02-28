@@ -1,0 +1,142 @@
+.submission {
+
+	.pageWrap {
+		background: transparent;
+	} // .pageWrap
+
+	.fix_top{
+		height: 100px;
+
+		@include breakpoint($desktop) {
+			height: 150px;
+		} // bp($desktop)
+
+		@include breakpoint($common) {
+			height: 180px;
+		} // bp($common)
+
+		@include breakpoint($widescn) {
+			height: 260px;
+		} // bp($widescn)
+	}
+
+	.site_branding {
+		&-message {
+			padding-top: 0;
+         
+			h1 {
+				@include fluid-type(600px, 1920px, 21px, 60px);
+			} // h1
+		} // -message
+	} // .site_branding
+	
+	.main_nav {
+		.nav_list {
+			li {
+	      &.active,
+	      &:hover {
+	        a {
+	          color: site-color('yellow');
+	          text-shadow: none;
+	        } // a
+	      } // .active, :hover
+      } // li
+		} // .nav_list
+	} // .main_nav
+	
+	.dataTable {
+		position: relative;
+		z-index: 10;
+
+		form {
+			margin-top: 15px;
+			max-height: 200px;
+			overflow-x: hidden;
+			overflow-y: auto;
+			
+			@include breakpoint($desktop) {
+				max-height: 380px;
+			} // bp($desktop)
+			
+			@include breakpoint($common) {
+				max-height: 450px;
+			} // bp($common)
+			
+			@include breakpoint($widescn) {
+				max-height: 635px;
+			} // bp($widescn)
+		} //form
+
+		&-container {
+			@include fluid-type(600px, 1920px, 12px, 18px);
+			font-family: "ESBuildNeutral", Arial, Helvetica, sans-serif;
+			font-weight: weight('regular');
+			line-height: 16px;
+			width: 100%;
+			
+			thead {
+				th {
+					position: sticky;
+					top: 0;
+				} // th
+			} // thead
+
+			tbody {
+				> tr {
+					border-bottom: 1px solid site-color('day');
+				}
+			} // tbody
+
+			th, td {
+				padding: 10px 5px;
+				text-align: left;
+				min-width: 100%;
+				
+				&.txt-ctr {
+					text-align: center;
+				} // txt-ctr
+			} // th, td
+
+			th {
+			  color: site-color('primary');
+			  text-transform: uppercase;
+			  
+			  &:after {
+			  	background-color: site-color('bgdark');
+			  	border-bottom: 1px solid site-color('primary');
+			  	content: '';
+			  	display: block;
+			  	position: absolute;
+			  	top: -1px;
+			  	right: 0;
+			  	bottom: 0;
+			  	left: 0;
+			  	z-index: -1;
+			  } // :after
+			}
+
+			td {				
+				&.img-ctr {
+					img{
+						margin-left: auto;
+						margin-right: auto;
+						width: 18px;
+					} // img
+				} // .img-ctr
+			} // td
+		} //.container
+		
+		.add_row {
+			cursor: pointer;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			margin-top: 10px;
+
+			img {
+				margin-right: 10px;
+				width:18px;
+			} // img
+		} // .add_row
+	} //.dataTable
+} // .submission

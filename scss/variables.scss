@@ -1,0 +1,27 @@
+// Media Query
+$narrow 	          : 340px;
+$tablet 	          : 768px;
+$desktop 	          : 1024px;
+$common             : 1366px;
+$widescn 	          : 1920px;
+
+// Font-weight
+$font-weight: (
+	'light'           : 300,
+	'regular'         : 400,
+	'bold' 			      : 700,
+	'black'   	      : 900
+);
+
+// Color Swatches
+$site-colors: (
+ 	'primary'         : #00D15F,
+  'bgdark'          : #12224C,
+  'lightgrey'				: #F0F1F2,
+  'button'          : #00D15F,
+  'yellow'          : #F4CA60,
+  'txtlink'					: #328208,
+  'text'            : #3F3F3F,
+  'night'           : #000,
+  'day'             : #FFF
+);

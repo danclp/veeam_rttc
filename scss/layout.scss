@@ -1,0 +1,244 @@
+// For Landscape Mode
+.warning {
+  background: site-color('day');
+  color: site-color('night');
+  display: none;
+  text-align: center;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  
+  &-wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  } // -wrap
+  
+  svg {
+    @include animation('rotateScreen 2s infinite ease forwards');
+    transform-origin: 50% 50%;
+    width: 120px;
+  } // svg
+  
+  .message {
+    margin-top: 10px;
+  } // .message
+  
+  @media only screen and (orientation: portrait) {
+    display: block;
+  } // portrait
+  
+  @media only screen and (orientation: landscape) {
+    display: none;
+  } // landscape
+} // .warning
+
+@include keyframes(rotateScreen) {
+  0% {
+    transform: rotate(0deg);
+  } // 0%
+
+  50% {
+    transform: rotate(-90deg);
+  } // 50%
+
+  100% {
+    transform: rotate(-90deg);
+  } // 100%
+} // keyframe
+
+//Login_Register HTML
+.pageWrap {
+  background: url(../images/bgmain.jpg) no-repeat top left/cover;
+  height: 100vh;
+  overflow: hidden;
+  position:relative;
+} // .pageWrap
+
+
+.site_branding {
+  padding: 20px 0 0 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  &-logo {
+    width: 120px;
+  } // -logo
+
+  &-message {
+    color: site-color('primary');
+    padding-top: 12%;
+    
+    h1 {
+      @include fluid-type(600px, 1920px, 42px, 120px);
+      line-height: 0.85;
+      font-weight: weight('black');
+      float: left;
+    } // h1
+  } // -message
+
+  &-general {
+    // position: absolute;
+    // z-index: 1;
+    // width: 60px;
+    // top: 10px;
+    // left: 10px;
+  } // -general
+
+  .maincloud {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    } // img
+
+    &-one {
+      filter: drop-shadow(2px 2px 20px #FFE2A5);
+      width: 45%;
+      height: 100%;
+      position: absolute;
+      z-index: 3;
+    } // -one
+
+    &-two{
+      filter: drop-shadow(2px 2px 10px #FFE2A5);
+      position: absolute;
+      width: 55%;
+      height: 100%;
+      z-index: 2;
+    } // -two
+
+    &-rocket{
+      position: absolute;
+      left: 60px;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    } // -rocket
+  } // .maincloud
+
+  @include breakpoint($desktop) {
+    padding: 40px 0 0 40px;
+    
+    &-logo {
+      width: 160px;
+    } // -logo
+
+    &-general {
+      // width: 100px;
+      // top: 20px;
+      // left: 20px;
+    } // -general
+    
+    .maincloud {
+      left: -100px;
+      
+      &-one {
+        width: 55%;
+      } // -one
+      
+      &-two {
+        width: 72%;
+      } // -two
+    } // .maincloud
+  } // bp($desktop)
+
+  @include breakpoint($common) {
+    &-logo {
+      width: 180px;
+    } // -logo
+    
+    .maincloud {
+      left: 0;
+      
+      &-one {
+        width: 45%;
+      } // -one
+      
+      &-two {
+        width: 55%;
+      } // -two
+    } // .maincloud
+  } // bp($common)
+
+  @include breakpoint($widescn) {
+    padding: 60px 0 0 60px;
+    
+    &-logo {
+      width: 230px;
+    } // -logo
+
+    &-general {
+      // width: 150px;
+      // top: 30px;
+      // left: 30px;
+    } // -general
+  } // bp($widescn)
+} // site_branding
+
+// Animate Cloud
+@include keyframes(cloudmove) {
+  0% {
+    margin-left: -1000px;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+// flashlight
+@include keyframes(flashlight) {
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+
+.animated_clouds {
+  padding: 50px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  img {
+    width: 20%;
+    
+    &.x1 {
+      @include animation('cloudmove 65s linear infinite');
+    } // .x1
+    
+    &.x2 {
+      @include animation('cloudmove 40s linear infinite');
+    } // .x2
+    
+    &.x3 {
+      @include animation('cloudmove 60s linear infinite');
+    } // .x3
+    
+    &.x4 {
+      @include animation('cloudmove 36s linear infinite');
+    } // .x4
+    
+    &.x5 {
+      @include animation('cloudmove 50s linear infinite');
+    } // .x5
+  } // img
+} //.animated_clouds
